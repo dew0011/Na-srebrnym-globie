@@ -1,54 +1,76 @@
 <!DOCTYPE HTML>
-<html lang="en" >
-    <head>
-        <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
-        
-        {%- include head.html -%}
+<html lang="en">
 
-        {% if page.previous %}
-            <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
-        {% else %}
-            <link rel="prev" href="{{site.baseurl}}/" />
-        {% endif %}
+<head>
+    <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
 
-        {% if page.next %}
-            <link rel="next" href="{{site.baseurl}}{{page.next.url}}" />
-        {% endif %}
-    </head>
-    <body>
-        <div class="book translate">
+    {%- include head.html -%}
 
-            {%- include toc-date.html -%}
+    {% if page.previous %}
+    <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
+    {% else %}
+    <link rel="prev" href="{{site.baseurl}}/" />
+    {% endif %}
 
-            <div class="book-body">
-                {%- include body.html -%}
+    {% if page.next %}
+    <link rel="next" href="{{site.baseurl}}{{page.next.url}}" />
+    {% endif %}
+</head>
 
-                {% if page.previous %}
-                    <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                {% else %}
-                    <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                {% endif %}
+<body>
+    <div class="book translate">
 
-                {% if page.next %}
-                    <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{page.next.title}}">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                {% endif %}
-            </div>
+        {%- include toc-date.html -%}
 
-            <script>
-            var gitbook = gitbook || [];
-            gitbook.push(function() {
-                gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
-            });
-            </script>
+        <div class="book-body">
+            {%- include body.html -%}
+
+            {% if page.previous %}
+            <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique"
+                aria-label="Previous page: {{page.previous.title}}">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            {% else %}
+            <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique"
+                aria-label="Previous page: {{site.title}}">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            {% endif %}
+
+            {% if page.next %}
+            <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique"
+                aria-label="Next page: {{page.next.title}}">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            {% endif %}
         </div>
 
-        {%- include footer.html -%}
+        <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function () {
+                gitbook.page.hasChanged({% - include metadata - post.json.tpl -%});
+            });
 
-    </body>
+            $('body').on('touchstart', function() {});
+            
+            // $('ul li.has-children').on("touchstart", function (e) {
+            //     'use strict'; //satisfy code inspectors
+            //     var link = $(this); //preselect the link
+            //     if (link.hasClass('hover')) {
+            //         return true;
+            //     }
+            //     else {
+            //         link.addClass('hover');
+            //         $('ul > li').not(this).removeClass('hover');
+            //         e.preventDefault();
+            //         return false; //extra, and to make sure the function has consistent return points
+            //     }
+            // });
+        </script>
+    </div>
+
+    {%- include footer.html -%}
+
+</body>
+
 </html>
