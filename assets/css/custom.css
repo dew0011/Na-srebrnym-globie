@@ -1,10 +1,10 @@
-div.translate span:hover {
+div.translate span:hover, div.translate span.hover {
     color: seagreen;
 }
-h3:hover {
+h3:hover, h3.hover {
     color: seagreen;
 }
-h4:hover {
+h4:hover, h4.hover {
     color: seagreen;
 }
 img {
