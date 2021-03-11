@@ -4,7 +4,7 @@ longtitle:        Na Srebrnym Globie
 author:           dew0011
 email:            55606938+dew0011@users.noreply.github.com
 description: >
-  Build Jekyll site with the GitBook style.
+  Translation of the book Na Srebrnym Globie by Jerzy Żuławski from Polish to English.
 
 version:          1.0
 gitbook_version:  3.2.3
