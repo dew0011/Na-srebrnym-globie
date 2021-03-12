@@ -45,6 +45,9 @@
             gitbook.push(function() {
                 gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
             });
+            
+            Array.from(document.querySelectorAll('div.translate span[title]'))
+                .forEach(node=>node.setAttribute('tabindex', '0'))
             </script>
         </div>
 
