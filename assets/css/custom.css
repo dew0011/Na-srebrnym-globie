@@ -20,10 +20,10 @@ img {
       display: inline-flex;
       justify-content: center; 
     }
-    [title]:active {
+    [title]:focus {
       color: seagreen; 
     }
-    [title]:active::after {
+    [title]:focus::after {
       content: attr(title);
       position: absolute;
       top: 100%;
@@ -35,23 +35,22 @@ img {
       z-index: 10;     
     }
     h3[title] {
-        color: red;
         position: relative;
         display: inline-flex;
         justify-content: center; 
-      }
-      h3[title]:focus::after {
+    }
+    h3[title]:focus::after {
         color: seagreen;
-      }
-      h3[title]:focus::after {
-          content: attr(title);
-          position: absolute;
-          top: 100%;
-          color: black;
-          background-color: white;
-          border: 1px solid;
-          width: fit-content;
-          padding: 3px;
-          z-index: 10;     
-        }
+    }
+    h3[title]:focus::after {
+        content: attr(title);
+        position: absolute;
+        top: 100%;
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        width: fit-content;
+        padding: 3px;
+        z-index: 10;
+    }
   }
