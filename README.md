@@ -11,7 +11,7 @@ I was looking for a useful way to view my translations in context with the origi
 
 ## Usage
 
-Hover over each sentence and the English translation will appear in a text box (sometimes referred to as a tool-tip). The focal sentence will also change colour.  
+Hover over (or for touchscreens, tap) on each sentence and the English translation will appear in a text box. The focal sentence will also change colour.  
 
 To see the rendered document please go to the repository's GitHub page: https://dew0011.github.io/Na-srebrnym-globie/
 

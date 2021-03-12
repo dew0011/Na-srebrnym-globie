@@ -4,7 +4,7 @@ layout: home
 
 Translation of the book **Na Srebrnym Globie** by **Jerzy Żuławski** from Polish to English. 
 
-In the next pages, hover your cursor over a sentence to see the translation.
+In the next pages, tap on a sentence (or on a desktop, hover your cursor) to see the translation.
 
 ----
 
