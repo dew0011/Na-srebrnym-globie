@@ -25,10 +25,10 @@ img {
     }
     [title]:focus::after {
       content: attr(title);
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      bottom: 10%;
       color: black;
-      background-color: white;
+      background-color: lightsteelblue;
       border: 1px solid;
       width: fit-content;
       padding: 3px;
@@ -44,10 +44,10 @@ img {
     }
     h3[title]:focus::after {
         content: attr(title);
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        bottom: 10%;
         color: black;
-        background-color: white;
+        background-color: lightsteelblue;
         border: 1px solid;
         width: fit-content;
         padding: 3px;
