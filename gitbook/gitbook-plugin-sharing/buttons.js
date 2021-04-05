@@ -46,7 +46,14 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'onClick': function(e) {
                 e.preventDefault();
                 window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href));
-            }
+            },
+        'rss': {
+            'label': 'RSS/Atom feed',
+            'icon': 'fa fa-rss',
+            'onClick': function(e) {
+                e.preventDefault();
+                window.open('/feed.xml');
+        }
         }
     };
 
