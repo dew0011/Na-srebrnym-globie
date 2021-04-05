@@ -11,7 +11,7 @@ gitbook_version:  3.2.3
 
 url:              'https://dew0011.github.io'
 baseurl:          '/Na-srebrnym-globie'
-rss:              RSS
+# rss:              RSS
 
 # markdown render engine.
 markdown:         kramdown
