@@ -53,7 +53,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'icon': 'fa fa-rss',
             'onClick': function(e) {
                 e.preventDefault();
-                window.open('/feed.xml');
+                window.open('feed.xml');
             }
         }
     };
