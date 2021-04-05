@@ -39,4 +39,4 @@ regenerate:       true
 
 plugins:
   - jemoji
-  - jekyll-feed
+  # - jekyll-feed
